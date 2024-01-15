@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2ff;
+}
+
+section .card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #7d2ae8;
+}
+
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+
+  width: 280px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #7d2ae8;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.media-icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-icons ion-icon {
+  margin-top: 10px;
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.media-icons ion-icon:hover {
+  opacity: 1;
+}
+
+.name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.rating ion-icon {
+  color: #7d2ae8;
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* NEGLECT THIS IS SHIT, TUTOR USES SWIPER LIBRARY FOR SLIDING BETWEEN CONTENT */
